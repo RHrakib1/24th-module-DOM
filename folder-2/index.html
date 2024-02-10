@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <style>
+        #fruit-collection {
+            background: tomato;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam laborum totam odio ducimus maxime beatae
+            porro quibusdam nesciunt, quae, reiciendis nemo sapiente voluptas! Nam molestias, nobis quod esse sed error.
+        </p>
+        <h1 id="fruit-collection">fruit</h1>
+        <ul>
+            <li>mango</li>
+            <li>jacfruit</li>
+            <li>banana</li>
+            <li>peyara</li>
+            <li>angur</li>
+        </ul>
+    </section>
+    <section>
+        <h1>name</h1>
+        <ul id="ui">
+            <li class="nam">rakib</li>
+            <li class="nam">hasan</li>
+            <li class="nam">tarin</li>
+            <li>rahman</li>
+        </ul>
+    </section>
+    <section>
+        <h1 id="man">player name</h1>
+        <ul>
+            <li class="hasa">shakib</li>
+            <li>tamim</li>
+            <li>taskin</li>
+            <li>mostafij</li>
+        </ul>
+    </section>
+    <script>
+        //jodi class dhore kono elements k output dekhano hoi tahole and class sorasori element dibe na akti colection dibe r element class use kore paite hole j collection pabo setar opr akta 'for loop' diye 
+        const manus = document.getElementsByClassName('nam');
+        // console.log(manus); //for loop diye dekhano hollo
+        for(const am of manus){
+            console.log(am);
+        }
+
+        // example 2 
+        const abbu=document.getElementsByClassName('hasa');
+        console.log(abbu);
+
+        // jodi id diye kono element k output dekhate chai tahole "getElementById" use krte hbe anr "innerText" use kore kono element er vitor ki ase ta dekhano jabe and Id sorasori element diye dibe
+        const test = document.getElementById('fruit-collection');
+        console.log(test.innerText);
+        // kono kisu change korar jonno furite silo fruite name hbe
+        test.innerText = 'fruite name';
+
+
+        // example 2
+        const list = document.getElementById('ui');
+        console.log(list.innerText);
+    </script>
+
+</body>
+
+</html>
