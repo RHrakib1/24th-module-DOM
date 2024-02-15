@@ -1,4 +1,3 @@
-// console.log('appand lavly boy');
 // kthai add krbo 
 const ulList = document.getElementById('cafe-fruit');
 // kon element ta add krbo
